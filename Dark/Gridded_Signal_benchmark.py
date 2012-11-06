@@ -95,7 +95,7 @@ if __name__ == "__main__":
                                           #The three grid bins
                                           #with the highest signal should
                                           #contain the three halos.
-    c = c.writer(open("Gridded_Signal_benchmark.csv", "wb")) #Now write the array to a csv file
+    c = c.writer(open("Gridded_Signal_benchmark_1.csv", "wb")) #Now write the array to a csv file
     c.writerow([str('SkyId'),str('pred_x1'),str( 'pred_y1'),str( 'pred_x2'),str( 'pred_y2'),str( 'pred_x3'),str(' pred_y3')])
     for k in xrange(n_skies):
         halostr=['Sky'+str(k+1)] #Create a string that will write to the file
